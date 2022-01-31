@@ -16,8 +16,8 @@ jobs:
         script: |
           cd app
           git pull origin main
-          # docker container stop app
-          # docker container rm app
-          # docker images rmi app
-          # docker build -t app .
-          # docker run -p 3000:3000 --name app -d app
+          docker container stop app
+          docker container rm app
+          docker images rmi bagus/app
+          docker build -t bagus/app .
+          docker run -p 3000:3000 --name app -d bagus/app
