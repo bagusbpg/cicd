@@ -15,7 +15,7 @@ func main() {
 		fmt.Printf("%s /\n", r.Method)
 		rw.WriteHeader(200)
 		rw.Header().Set("Content-Type", "text/html; charset=utf-8")
-		rw.Write([]byte("Hello world, Bagus"))
+		rw.Write([]byte("Hello world, Bagus..."))
 	})
 
 	// serve
